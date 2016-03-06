@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.headcrashing.HelloWorldController">
+	<stylesheets>
+		<URL value="@HelloWorldTheme.css" />
+	</stylesheets>
+
+	<center>
+		<Label fx:id="myLabel" text="${controller.greeting + ' ' + controller.name}" BorderPane.alignment="CENTER" />
+	</center>
+	<bottom>
+		<TextField fx:id="myTextField" promptText="%prompt" BorderPane.alignment="CENTER" onAction="#onEnteredName" />
+	</bottom>
+</BorderPane>
